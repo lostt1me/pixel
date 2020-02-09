@@ -29,6 +29,7 @@ module.exports = {
         'extensions': ['.js']
       }
     ],
+    'linebreak-style': 'off',
   },
   settings: {
     'import/resolver': {

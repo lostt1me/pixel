@@ -1,7 +1,24 @@
 .wrapper {
   height: 60px;
-  background-color: $color-dark;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
   display: flex;
   align-items: center;
+}
+@font-face {
+  font-family: Futura PT;
+  src: url('./fonts/ghostbold-webfont.woff') format('woff');
+}
+.ghostElement {
+  position: absolute;
+  width: 71px;
+  height: 20px;
+  left: 371px;
+  top: 30px;
+  font-family: Futura PT;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 20px;
+  text-transform: uppercase;
 }

@@ -1,12 +1,12 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 import { createMetaImagePath } from 'utils';
 
-export const SEO = ({
-  data: { title, description, image, slug } = {},
-  facebook,
-} = {}) => {
+const SEO = ({
+  title, description, image, slug, facebook,
+}) => {
   const {
     site: {
       siteMetadata: {
@@ -19,7 +19,7 @@ export const SEO = ({
       },
     },
   } = useStaticQuery(graphql`
-    query SEO {
+    query {
       site {
         siteMetadata {
           siteTitle
@@ -46,17 +46,19 @@ export const SEO = ({
       }}
     >
       {/* General */}
-      <meta name={'description'} content={currentDescription}/>
+      <meta name="description" content={currentDescription} />
       {/* Open Graph */}
-      <meta property={'og:url'} content={currentUrl}/>
-      <meta property={'og:title'} content={currentTitle}/>
-      <meta property={'og:description'} content={currentDescription}/>
-      <meta property={'og:image'} content={currentImage}/>
-      <meta property={'og:type'} content={'website'}/>
-      {facebook && <meta property={'fb:app_id'} content={facebook.appId}/>}
+      <meta property="og:url" content={currentUrl} />
+      <meta property="og:title" content={currentTitle} />
+      <meta property="og:description" content={currentDescription} />
+      <meta property="og:image" content={currentImage} />
+      <meta property="og:type" content="website" />
+      {facebook && <meta property="fb:app_id" content={facebook.appId} />}
       {/* Twitter Card tags */}
-      <meta name={'twitter:card'} content={'summary'}/>
-      <meta name={'twitter:creator'} content={authorTwitterAccount}/>
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:creator" content={authorTwitterAccount} />
     </Helmet>
   );
 };
+
+export default SEO;

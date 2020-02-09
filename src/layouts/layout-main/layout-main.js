@@ -2,14 +2,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from 'components/shared/header';
-import styles from './layout-main.module.scss';
-
 
 const LayoutMain = ({ children }) => (
-  <>
+  <div>
     <Header />
     <main>{children}</main>
-  </>
+  </div>
 );
 
 LayoutMain.propTypes = {

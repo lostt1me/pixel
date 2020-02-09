@@ -1,8 +1,6 @@
 import React from 'react';
-import { Link } from 'gatsby';
-
 import LayoutMain from 'layouts/layout-main';
-import { SEO } from 'components/shared/seo/seo';
+import SEO from 'components/shared/seo';
 
 const IndexPage = () => (
   <LayoutMain>
