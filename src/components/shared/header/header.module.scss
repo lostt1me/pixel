@@ -22,3 +22,52 @@
   line-height: 20px;
   text-transform: uppercase;
 }
+.loginButton {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  left: 1450px;
+  top: 15px;
+
+  background-color: #000000;
+  border-radius: 50px;
+}
+.loginButton span {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  left: 30px;
+  top: 15px;
+
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.navigation {
+  position: absolute;
+  width: 680px;
+  height: 20px;
+  left: 620px;
+  top: 30px;
+  display: flex;
+  margin-left: 30px;
+  color: black;
+}
+.navigation a {
+  //position: absolute;
+  text-decoration: none;
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+}

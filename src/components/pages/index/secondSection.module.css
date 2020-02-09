@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Futura PT Cond;
+    src: url('./fonts/FuturaPT-ExtraBold.woff') format('woff');
+}
+.secondSectionCaption {
+    position: absolute;
+    width:  1000px;
+    height: 50px;
+    left: 370px;
+    top: 1020px;
+    
+    font-family: Futura PT Cond;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: black;
+}

@@ -1,17 +1,14 @@
 import React from 'react';
 import LayoutMain from 'layouts/layout-main';
 import SEO from 'components/shared/seo';
+import MainSection from 'components/pages/index/mainSection';
+import SecondSection from 'components/pages/index/secondSection';
 
 const IndexPage = () => (
   <LayoutMain>
     <SEO />
-    <div className="container">
-      <div className="columns">
-        <div className="column">1</div>
-        <div className="column">2</div>
-        <div className="column">3</div>
-      </div>
-    </div>
+    <MainSection />
+    <SecondSection />
   </LayoutMain>
 );
 
