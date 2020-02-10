@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './mainSection.module.css';
 import question from './images/question.svg';
-import Tooltip from './tooltip';
+import Tooltip from './tooltip/tooltip';
 
 const MainSection = () => (
   <div className={styles.image}>
